@@ -14,12 +14,10 @@ public class Mission3_1 {
 			System.out.print("키를 입력해 주세요:");
 			int height = scan.nextInt();
 			
-			int standHeight = 0;
+			int standHeight = 150;
 			
 			if("남".equals(gender)) {			
 				standHeight = 160;
-			} else {
-				standHeight = 150;
 			}
 						
 			if(height > standHeight) {
