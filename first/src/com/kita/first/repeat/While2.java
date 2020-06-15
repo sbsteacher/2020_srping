@@ -1,4 +1,4 @@
-package com.kita.first;
+package com.kita.first.repeat;
 
 public class While2 {
 
