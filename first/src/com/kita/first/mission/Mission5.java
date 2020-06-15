@@ -25,7 +25,24 @@ public class Mission5 {
 		System.out.print("점수를 입력해 주세요: (0~100)");
 		int score = scan.nextInt();
 		scan.close();
+				
+		if(score > 100 || score < 0) {
+			System.out.println("잘 못 입력하였습니다.");
+			
+		} else if(score >= 90) {
+			System.out.print("A");
+			
+		} else if(score >= 80) {
+			System.out.print("B");
+			
+		} else if(score >= 70) {
+			System.out.print("C");
+			
+		} else {
+			System.out.print("D");
+		}
 		
+		/*
 		if(score > 100 || score < 0) {
 			System.out.println("잘 못 입력하였습니다.");
 			
@@ -41,6 +58,7 @@ public class Mission5 {
 		} else {
 			System.out.print("A");
 		}
+		*/
 		
 		if(score == 100) {
 			System.out.print("+");
