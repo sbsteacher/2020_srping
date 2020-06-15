@@ -9,7 +9,7 @@ public class Mission5 {
 	 90점 이상 A
 	 80점 이상 B
 	 70점 이상 C
-	 나머지는 D입니다.
+	 나머지는 무조건 D입니다. (+, - 없다)
 	 
 	 or
 	 
@@ -44,7 +44,7 @@ public class Mission5 {
 		
 		if(score == 100) {
 			System.out.print("+");
-		} else if(score >= 70){
+		} else if(score >= 70 && score <= 100){
 			int mod = score % 10;
 			
 			if(mod >= 7) {
