@@ -52,6 +52,7 @@ public class GreatMission1 {
 			
 			System.out.printf("S:%d / B:%d / O:%d\n", s, b, (LEN-s-b));
 		}
+		scan.close();
 		
 		System.out.printf("%d 시도 - End!", cnt);
 		
