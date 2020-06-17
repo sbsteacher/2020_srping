@@ -24,7 +24,9 @@ public class GreatMission1 {
 			}
 		}
 				
+		int cnt = 0;
 		while(true) {
+			cnt++;
 			int s=0, b=0;
 			
 			System.out.print("숫자 입력: ");
@@ -51,7 +53,7 @@ public class GreatMission1 {
 			System.out.printf("S:%d / B:%d / O:%d\n", s, b, (LEN-s-b));
 		}
 		
-		System.out.println("End!");
+		System.out.printf("%d 시도 - End!", cnt);
 		
 	}
 
