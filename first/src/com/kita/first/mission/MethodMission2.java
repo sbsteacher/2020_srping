@@ -7,7 +7,7 @@ public class MethodMission2 {
 		//printStar(3);
 		//printStarSqure(4);
 		//printStarTriangle(5);
-		printStarTriangleReverse(5);	
+		printStarTriangleReverse(5);
 	}
 	
 	public static void printStarTriangleReverse(int star) {
