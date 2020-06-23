@@ -9,7 +9,7 @@ public class BoardTest {
 		bv2.setTitle("제목2");
 		bv2.setContent("내용2");
 		bv2.setWriteId(2);
-		
+				
 		System.out.println("bv2 제목 : " + bv2.getTitle());
 
 	}

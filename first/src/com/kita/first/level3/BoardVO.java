@@ -36,9 +36,7 @@ public class BoardVO {
 
 	public void setWriteId(int writeId) {
 		this.writeId = writeId;
-	}
-
-	
+	} 
 }
 
 
