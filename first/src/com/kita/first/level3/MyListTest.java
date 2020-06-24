@@ -55,7 +55,7 @@ class MyList {
 	void add(int idx, int num) {
 		int[] temp = new int[arr.length + 1];		
 		for(int i=0; i<arr.length; i++) {
-			temp[i < idx ? i : i + 1] = arr[i];
+			temp[(i < idx) ? i : i + 1] = arr[i];
 		}		
 		temp[idx] = num;
 		arr = temp;
