@@ -12,11 +12,31 @@ public class MyListTest {
 		
 		list.remove();
 		
+		//MyArrays.print(list); // [10, 1200, 15] 프린트 되도록!!	
+		String str = MyArrays.toString(list); // "[10, 1200, 15]" 문자열을 리턴하도록!!
+		
+		System.out.println("str : " + str);
+		
+		//Arrays.toString 메소드 사용금지!!!!!!!!!!! 구현하삼!!!!!!!!!!!!
+	}
+}
+
+class MyArrays {
+	static String toString(MyList list) {
+		String str = "";
 		for(int i=0; i<list.size(); i++) {
-			System.out.print(list.get(i) + ", ");
+			if(i > 0) { 
+				//str += ", ";
+				str = str + ",";						
+			}
+			str += list.get(i);
 		}
-		
-		
+		//return "[" + str + "]";
+		return String.format("[%s]", str);
+	}
+	
+	static void print(MyList list) { 		
+		System.out.println(toString(list));
 	}
 }
 
