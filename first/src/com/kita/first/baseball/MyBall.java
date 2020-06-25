@@ -1,6 +1,5 @@
 package com.kita.first.baseball;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class MyBall {
@@ -22,22 +21,19 @@ public class MyBall {
 			String val = scan.nextLine();	
 			try {
 				myArr[i] = Integer.parseInt(val);	
-			}catch(Exception e) {
+			} catch(Exception e) {
 				myArr[i] = 0;
-			}
-			
+			}			
 			if(myArr[i] == 0) {
 				i--;
 				System.out.println("숫자만 입력하세요.");
 				continue;
 			}			
-			
 			if(myArr[i] < 1 || myArr[i] > 9) {
 				i--;
 				System.out.println("1~9값만 입력하세요.");
 				continue;
-			}
-			
+			}			
 			for(int z=0; z<i; z++) {
 				if(myArr[i] == myArr[z]) {
 					i--;
@@ -45,8 +41,23 @@ public class MyBall {
 					break;
 				}
 			}			
-		}		
-		System.out.println(Arrays.toString(myArr));
+		}
+	}
+	
+	public int get(int idx) {
+		return myArr[idx];
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
 

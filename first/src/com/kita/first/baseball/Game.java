@@ -7,12 +7,11 @@ public class Game {
 		Baseball ball = new Baseball(gameCnt);
 		MyBall myBall = new MyBall(gameCnt);
 		
-		myBall.setNumbers();
+		do {
+			myBall.setNumbers();
+		} while(Checker.check(gameCnt, ball, myBall));
 		
-		//숫자1: 3
-		//숫자2: 6
-		//숫자3: 8
-		
+		System.out.println("게임 종료!");
 
 	}
 
