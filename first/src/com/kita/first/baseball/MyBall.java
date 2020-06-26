@@ -22,13 +22,11 @@ public class MyBall {
 			try {
 				myArr[i] = Integer.parseInt(val);	
 			} catch(Exception e) {
-				myArr[i] = 0;
-			}			
-			if(myArr[i] == 0) {
 				i--;
 				System.out.println("숫자만 입력하세요.");
 				continue;
 			}			
+					
 			if(myArr[i] < 1 || myArr[i] > 9) {
 				i--;
 				System.out.println("1~9값만 입력하세요.");
