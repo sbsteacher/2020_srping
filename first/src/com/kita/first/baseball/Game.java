@@ -10,6 +10,8 @@ public class Game {
 			} catch(Exception e) {}
 		}
 		
+		System.out.printf("%d개 숫자야구게임 Start\n", gameCnt);
+		
 		Baseball ball = new Baseball(gameCnt);
 		MyBall myBall = new MyBall(gameCnt);
 		
