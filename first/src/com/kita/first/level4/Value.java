@@ -13,7 +13,8 @@ public class Value {
 	
 	@Override
 	public boolean equals(Object obj) {
-		return false;
+		Value objValue = (Value)obj;
+		return this.val == objValue.getVal();
 	}
 }
 
