@@ -10,6 +10,12 @@ public class Value {
 	public int getVal() {
 		return val;
 	}
+		
+	@Override
+	public String toString() {
+		return String.format("%,d", val);
+		//return String.valueOf(val);
+	}
 	
 	@Override
 	public boolean equals(Object obj) {
@@ -18,8 +24,10 @@ public class Value {
 	}
 }
 
-
-
-
+class Value2 extends Value {
+	public Value2(int val) {
+		super(val);
+	}	
+}
 
 
