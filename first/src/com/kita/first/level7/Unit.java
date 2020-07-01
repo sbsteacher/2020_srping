@@ -15,6 +15,10 @@ public class Unit {
 		return current_hp;
 	}
 	
+	public void setCurrent_hp(int hp) {
+		this.current_hp = hp;
+	}
+	
 	public void getDamage(int damage) {
 		current_hp -= damage;
 	}
